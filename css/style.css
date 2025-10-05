@@ -189,4 +189,9 @@ color: #fff;
 text-align: center;
 border-radius: 10px;
 }
+@media(max-width:767px){ 
+  .word-area .the-word {
+    font-size: 30px;
+  }
+}
 
