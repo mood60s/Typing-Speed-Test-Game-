@@ -1,0 +1,186 @@
+:root {
+  --main-color: #2196f3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+/* =====================================================
+End Reset
+======================================================== */
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+/* ======================================
+Start Container Div Style and childeren Container
+========================================= */
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+.game header {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.container .message {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+.container .message strong {
+  color: #040;
+}
+.container .message strong::before {
+  content: "[";
+}
+.container .message strong::after {
+  content: "]";
+}
+.container time[datetime="seconds"] {
+  font-weight: bold;
+  color: #040;
+}
+.container .message time::before {
+  content: "\29B6";
+  color: green;
+  margin-right: 5px;
+}
+.start {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  padding: 20px;
+  margin: 20px auto;
+  position: relative;
+  z-index: 1;
+}
+.start:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #008966;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 6px;
+  transform: skew(-10deg);
+  transition: 1s;
+}
+.start:hover::before {
+  transform: skew(0);
+  background-color: #040;
+}
+.word-area .the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--main-color);
+  user-select: none;
+}
+.word-area input {
+  display: block;
+  margin: 15px auto;
+  padding: 15px;
+  border: 3px solid var(--main-color);
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: var(--main-color);
+  font-size: 20px;
+}
+.word-area input:focus {
+  outline: none;
+}
+.upcoming-words {
+  padding: 15px;
+  background-color: white;
+}
+.upcoming-words ul {
+  margin: 15px 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.upcoming-words ul li {
+  background-color: var(--main-color);
+  font-weight: bold;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+}
+.title-upcoming {
+  font-variant: small-caps;
+  font-style: italic;
+  font-size: 25px;
+  color: #040;
+}
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+  margin-top: 10px;
+}
+.control span {
+  font-weight: bold;
+}
+.control time {
+  color: #040;
+  font-weight: bold;
+}
+.control output {
+  font-weight: bold;
+  color: #040;
+}
+/* ======================================
+End Container Style
+========================================= */
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+.finish .good {
+  color: var(--main-color);
+}
+.finish .bad {
+  color: red;
+}
+/* Select */
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+select {
+font-size: 30px;
+padding: 15px;
+appearance: none;
+border:none;
+outline: none;
+background-color: #008966;
+color: #fff;
+text-align: center;
+border-radius: 10px;
+}

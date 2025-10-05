@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed test</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- <div>
+      <button>See Total Score</button>
+      <p></p>
+    </div> -->
+    <section class="game">
+      <header>
+        <h2 class="name">Typing Speed Test Game</h2>
+      </header>
+      <div class="container">
+        <div class="message">
+          <span>Hint:You are Playing on</span>
+          <strong class="lvl"></strong>
+          <small>And you have</small>
+          <time datetime="seconds"></time>
+          <span>To Type The Word</span>
+        </div>
+        <button class="start">Start Playing</button>
+        <div class="word-area">
+          <p class="the-word"></p>
+          <input type="text" class="input" aria-label="type the word Here" />
+        </div>
+        <aside class="upcoming-words">
+          <h3 class="title-upcoming" title="upcoming-Words">upcoming words</h3>
+          <ul></ul>
+        </aside>
+        <div class="control">
+          <div class="time">
+            <small>Time Left:</small>
+            <time></time>
+            <span>Seconds</span>
+          </div>
+          <div class="score">
+            <small>Score:</small>
+            <output class="got">0</output>
+            <span>of</span>
+            <span class="total"></span>
+          </div>
+        </div>
+      </div>
+      <div class="finish" aria-live="polite"></div>
+      <div class="parent">
+        <select name="game-option" id="game-option">
+          <option value="Easy" selected>Easy</option>
+          <option value="Normal">Normal</option>
+          <option value="Hard">Hard</option>
+        </select>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
