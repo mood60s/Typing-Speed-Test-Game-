@@ -126,6 +126,11 @@ Start Container Div Style and childeren Container
   border-radius: 4px;
   color: #fff;
 }
+@media(max-width:767px){ 
+.upcoming-words ul li { 
+    font-size: 11px;
+  }
+}
 .title-upcoming {
   font-variant: small-caps;
   font-style: italic;
@@ -184,3 +189,4 @@ color: #fff;
 text-align: center;
 border-radius: 10px;
 }
+
